@@ -3,6 +3,18 @@ from pwn import *
 HOST = "127.0.0.1"
 PORT = 4869
 
+'''
+Heap Chunk Structure
+
+struct dada_chunk {
+  _BYTE *pData;
+  SIZE_T szDataSize;
+  _BYTE key[64];
+  _QWORD padding;
+  struct data_chunk *next;
+}
+'''
+
 # context.log_level = "debug"
 context.arch = "amd64"
 
@@ -290,15 +302,3 @@ r.recvline()
 log.info(r.recvuntil("}"))
 r.close()
 
-
-'''
-Heap Chunk Structture
-
-struct dada_chunk {
-  _BYTE *pData;
-  SIZE_T szDataSize;
-  _BYTE key[64];
-  _QWORD padding;
-  struct data_chunk *next;
-}
-'''
