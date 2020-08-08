@@ -5,11 +5,8 @@
 
 ## writeup
 
-<details>
-<summary>SPOILER ALERT!</summary>
-
-I need more free time...plz wait
+unsafe unlink + FSOP, that's all.
 
 ![RESULT](images/result.png)
-</details>
+
 

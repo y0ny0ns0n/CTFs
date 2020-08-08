@@ -5,8 +5,6 @@
 
 ## writeup
 
-<details>
-<summary>SPOILER ALERT!</summary>
 
 문제파일을 실행하면 아래와 같이 입력한 명령어에 따라 opcode들을 해석해주는 interpreter가 동작하고 있다는 것을 알 수 있습니다.
 
@@ -169,4 +167,3 @@ AAW primitive를 구현한 부분입니다. 임의의 주소를 11번째 opcode 
 opcode를 활용하는 부분은 앞서 마치 프로그래밍 같다, 라고 말했지만 그보단 추억의 [RPG Maker](https://ko.wikipedia.org/wiki/RPG_%EB%A7%8C%EB%93%A4%EA%B8%B0)같은 게임 맵 개발도구로 각각 서로다른 상호작용을 하는 객체들을 적재적소에 배치하는 듯한 느낌에 더 가까웠던 것 같습니다.
 
 ![image9](images/image9.png)
-</details>
